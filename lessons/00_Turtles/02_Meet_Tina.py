@@ -3,8 +3,8 @@
 # Comments are used to explain what the code does.
 # Read the program and try to understand what each line does.
 
-import turtle                           # Tell Python we want to work with the turtle
-turtle.setup(width=600, height=600)     # Set the size of the window
+import turtle                          
+turtle.setup(width=600, height=600)     
 
 tina = turtle.Turtle()                  # Create a turtle named tina
 

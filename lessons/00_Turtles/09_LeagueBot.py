@@ -9,12 +9,30 @@ Write your own turtle program! Here is what your program should do
 
 """
 
-import turtle as turtle
+import turtle                          
+turtle.setup(width=600, height=600)     
 
-screen = turtle.Screen()
-screen.setup(width=600, height=600)
-screen.bgcolor('white')
+tina = turtle.Turtle()  
+def set_turtle_image(turtle, image_name):
+    """Set the turtle's shape to a custom image."""
 
-t = turtle.Turtle()
+    from pathlib import Path
+    image_dir = Path(__file__).parent / "images"
+    image_path = str(image_dir / image_name)
+
+    screen = turtle.getscreen()
+    screen.addshape(image_path)
+    turtle.shape(image_path)
+
+# Set up the screentina.penup()
+tina.pendown()
+#set_turtle_image(tina,"pikachu.gif")
+tina.turtlesize(stretch_wid=10, stretch_len=10, outline=4)
+tina.color("cyan")
+tina.begin_fill()
+tina.circle(40) 
+tina.goto(60,140) 
+tina.end_fill()
+turtle.exitonclick() 
 
 ... # Your Code Here

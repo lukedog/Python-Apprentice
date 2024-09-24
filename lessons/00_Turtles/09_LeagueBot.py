@@ -30,9 +30,16 @@ tina.pendown()
 tina.turtlesize(stretch_wid=10, stretch_len=10, outline=4)
 tina.color("cyan")
 tina.begin_fill()
-tina.circle(40) 
+
+for i in range(5):
+    tina.forward(50)
+    tina.left(72)
+
 tina.goto(60,140) 
 tina.end_fill()
+
+
+
 turtle.exitonclick() 
 
 ... # Your Code Here

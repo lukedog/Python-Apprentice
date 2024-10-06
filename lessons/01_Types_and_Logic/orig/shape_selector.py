@@ -24,7 +24,7 @@ def draw_shape(shape):
         for i in range(3):  # ;
             my_turtle.forward(100)  # ;
             my_turtle.right(120)  # ;
-    elif shape == "square":  # ;
+    elif shape== "square":  # ;
         for i in range(4):  # ;
             my_turtle.forward(100)  # ;
             my_turtle.right(90)  # ;

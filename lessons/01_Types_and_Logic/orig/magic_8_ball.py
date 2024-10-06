@@ -8,8 +8,6 @@ window.withdraw()
 
 # TODO 1) Get the user to enter a question for the 8 ball to answer
 name = simpledialog.askstring(None, "Ask a question")
-
-# TODO 2) Make a variable and initialize it to a random number.
 #         You will need to make a random object!
 #         Limit the random numbers to be between 0 and 3
 randNum = random.randint(0, 3)

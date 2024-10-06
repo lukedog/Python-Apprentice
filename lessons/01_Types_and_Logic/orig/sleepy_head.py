@@ -18,3 +18,17 @@ paths.
 #     the other to indicate if the shape is to be square. When both
 #     variables are true, use a turtle to draw a red square.
 pass
+import turtle                          
+turtle.setup(width=600, height=600)     
+
+tina = turtle.Turtle()  
+def set_turtle_image(turtle, image_name):
+    """Set the turtle's shape to a custom image."""
+
+    from pathlib import Path
+    image_dir = Path(__file__).parent / "images"
+    image_path = str(image_dir / image_name)
+
+    screen = turtle.getscreen()
+    screen.addshape(image_path)
+    turtle.shape(image_path)

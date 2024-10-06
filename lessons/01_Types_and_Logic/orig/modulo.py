@@ -10,8 +10,7 @@ import random
 #  To do this test, you divide the number by 2.
 #  If the remainder is zero, the number is even, but if the remainder is one, the number is odd.
 #  In code this would look like this:
-
-    number = random.randint(0,100)
+ number = random.randint(0,100)
     if number % 2 == 0:
         print(str(number) + " is even")
     else:
@@ -22,3 +21,5 @@ import random
         # do some code
         if i % 20 == 0:
             print("20 more repeats completed")
+
+    

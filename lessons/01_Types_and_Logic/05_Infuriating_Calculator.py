@@ -20,6 +20,33 @@ simpledialog.askfloat() or simpledialog.askinteger(), and for the math operation
 you can ask for a string with simpledialog.askstring().
 
 """
+from tkinter import messagebox, simpledialog, Tk 
+
+window = Tk()  
+
+window.withdraw()
+
+num1 = simpledialog.askfloat(None,"What is your number?" )
+
+
+num2 = simpledialog.askfloat(None,"What is your number?" )
+
+
+operation = simpledialog.askstring(None, "Choose a operation")
+
+if operation == "addition": 
+   messagebox.showinfo(message=num1+num2)
+
+elif operation == "subtraction":
+   messagebox.showinfo(message=num1-num2)
+
+elif operation == "multiplication":
+   messagebox.showinfo(message=num1*num2)
+
+elif operation == "division":
+   messagebox.showinfo(message=num1/num2)
+
+messagebox.showerror()
 
 # Import the required modules
 

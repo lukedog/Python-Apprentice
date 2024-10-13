@@ -19,23 +19,23 @@ turtle.setup (width=600, height=600)    # Set the size of the window
 tina = turtle.Turtle()                  # Create a turtle named tina
 
 tina.shape('turtle')                    # Set the shape of the turtle to a turtle
-tina.speed(2)                           # Make the turtle move as fast, but not too fast. 
+tina.speed(109)                           # Make the turtle move as fast, but not too fast. 
 
 
-forwards = [ ... ]
-lefts = [ ... ]
-colors = [  ... ]
+forwards = [30]
+lefts = [50]
+colors = ["yellow, blue, pink"]
 
 for  i in range(8):
 
-    forward = ...
-    left = ...
-    color = ...
+    forward = "30"
+    left = "50"
+    color = "blue"
 
 
-    tina.color(color)
-    tina.forward(forward)
-    tina.left(left)
+    tina.color("pink")
+    tina.forward(30)
+    tina.left(50)
 
 turtle.exitonclick()  
 

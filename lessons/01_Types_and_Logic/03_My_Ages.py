@@ -45,10 +45,23 @@ age = simpledialog.askfloat("Your Age","How old are you?")
 
 
 if age >=0 and age <= 2:
-    messagebox.showinfo("You are a Baby")
+    messagebox.showinfo('What you are',"You are a Baby")
 
 elif age >=3 and age <=5:
-    messagebox.showinfo("You are a Toddler")
+    messagebox.showinfo('What you are',"You are a Toddler")
+
+elif age >=6 and age <=12:
+    messagebox.showinfo('What you are',"You are a Child")
+
+elif age >=13 and age <=19:
+    messagebox.showinfo('What you are',"You are a Teen")
+
+
+elif age >=20 and age <=64:
+    messagebox.showinfo('What you are',"You are a Adult")
+
+elif age >65:
+    messagebox.showinfo('What you are',"You are a Senior")
 # Show the message to the user
 
 

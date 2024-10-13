@@ -8,12 +8,24 @@ at the comments and the code snippets in the previous lessons, like
 
 
 """
+from tkinter import messagebox, simpledialog, Tk 
 
+
+window = Tk()  
+
+window.withdraw()  
+
+num1 = simpledialog.askfloat(None,"What is your number?" )
+
+
+num2 = simpledialog.askfloat(None,"What is your number?" )
+
+messagebox.showinfo(message=num1+num2)
 # Import the required modules
 
 # Create a window object
 
-# Hide the window, hint: use the withdraw method
+# Hide the window, hint: use the withdraw method4
 
 # Ask the user for the first number   
 

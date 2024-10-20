@@ -27,10 +27,14 @@ HINT: You can use % and // to get the first and last digit of a number,
 our you can convert the number to a string and iterate over the digits
 
 """
+from cgitb import text
 from guizero import App, Box, Text
 
 app = App("Numbers Grid", layout="grid")
 
+for y in range (10):
+    for x in range (10):
+        Text(app,text='🦡', grid=[10,10], color="black")
 # Create a 10x10 grid using nested loops
 # Or you can use a single loop and calculate the row and column
 

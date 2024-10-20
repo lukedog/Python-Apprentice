@@ -7,7 +7,7 @@ append them to the story
 """
 
 words = ['Once', '👦', 'upon', '🐕', 'park', 'met', 'with', 'a', 'the', 
-    'time', 'to', 'who', '🐈', '👧', 'and', 'went', 'had', 'play', '⚽.', 'they']
+    'time', 'to', '.', '🐈', '👧', 'and', 'went', 'had', 'play', '⚽.', 'they']
 
 story = [] 
 
@@ -20,5 +20,14 @@ story.append(words[7])
 story.append(words[1])
 story.append(words[5])
 story.append(words[6])
+story.append(words[7])
+story.append(words[13])
+story.append(words[11])
+story.append(words[19])
+story.append(words[15])
+story.append(words[10])
+story.append(words[17])
+story.append(words[18])
+story.append(words[11])
 # Display the story to the user
 print(' '.join(story))

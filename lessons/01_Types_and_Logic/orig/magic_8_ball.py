@@ -25,7 +25,7 @@ elif randNum == 1:
 # TODO 5) If the random number is 2
 elif randNum == 2:
     # TODO --tell the user "Maybe you should ask Google?"
-    messagebox.showinfo(None, "Maybe you should ask Google?")
+    messagebox.showinfo(None, "Maybe you should ask me?")
 
 # TODO 6) If the random number is 3
 else:

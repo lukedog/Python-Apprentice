@@ -34,17 +34,43 @@ import random
 
 def ask_integer(prompt):
     """Function to ask the user for an integer"""
-    while True:
-        try:
-            return int(input(prompt))
-        except ValueError:
-            print("Please enter a valid number!")
+    try:
+        return int(input(prompt))
+    except ValueError:
+        print("Please enter a valid number!")
+
+n=random.randint(1,100)
+ask_integer("guess a number between 1 and 100:")
+
+guess=ask_integer
+print("Python")
+if n%7== 0:
+    n=random.randint(1,100)
+    
 
 
 # Pick the random number
 
-# In your loop:
 
+# In your loop:
+x=0
+while True:
+    guess=ask_integer("guess a number between 1 and 100")
+    if guess%7 == 0:
+       print("guess again")
+
+    if guess<n:
+        print("too low")
+
+    if guess>n:
+        print("to High")
+
+    if guess==n:
+        break
+
+print("correct")
+  
+    
     # Get the user's guess
 
     # If the user's guess is divisible by 7, tell the user to start over

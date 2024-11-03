@@ -11,12 +11,12 @@ score = 0  # ;
 
 response = simpledialog.askstring(None, "Which is better, Python or Java?")  # ;
 
-if response.lower() == "python":  # ;
+if response.lower() == "java":  # ;
     score += 1  # ;
     print("Correct! Your score is " + str(score))  # ;
 else:  # ;
     score -= 1  # ;
-    messagebox.showerror(message="WRONG! It's Python of course!")  # ;
+    messagebox.showerror(message="WRONG! It's java of course!")  # ;
 
 messagebox.showinfo(message="Your final score is " + str(score))  # ;
 # ASK A QUESTION AND CHECK THE ANSWER

@@ -22,7 +22,7 @@ def getNextColor(i):
 turtle.setup (width=600, height=600) 
 window = turtle.Screen()
 
-baseSize = 200  # the size of the black part of the star
+baseSize = 2 # the size of the black part of the star
 flameSize = 130  # the length of the flaming arms
 
 t = turtle.Turtle() 
